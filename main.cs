@@ -225,7 +225,13 @@ class VideoPoker {
           currency += bet;
       }
       else{
+          if(currency > 0){
           Console.WriteLine("Програш, спробуйте знову");
+          }
+          else{
+              Console.WriteLine("Ви програли всі гроші");
+              Environment.Exit(228);
+          }
       }
   }
 }
