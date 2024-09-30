@@ -147,7 +147,7 @@ class VideoPoker {
       else{  //перевірка на інші стріти
           int collisions = 0;
       for(int i = 0; i<4; i++){
-          if(values[i] == values[i+1]+1){
+          if(values[i] == values[i+1]-1){
               collisions++;
           }
        }
